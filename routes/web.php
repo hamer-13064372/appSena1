@@ -22,5 +22,10 @@ Route::get('/', function () {
 
 Route::get('/api/categoria', [CategoriaController::class, 'index']);
 Route::post('/api/categoria/registrar', [CategoriaController::class, 'store']);
+Route::put('/api/categoria/actualizar', [CategoriaController::class, 'update']);
+Route::post('/api/categoria/eliminar', [CategoriaController::class, 'destroy']);
+
+
+
 Route::post('/api/cliente/registrar', [ClienteController::class, 'store']);
 Route::post('/api/marca/registrar', [MarcaController::class, 'store']);
